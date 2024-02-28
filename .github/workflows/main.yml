@@ -1,12 +1,12 @@
 on:
-        push:
-                branches: [ master ]
-        pull_request: 
-			          branches: [ master ]
-        workflow_dispatch:
+    push:
+        branches: [ master ]
+    pull_request: 
+        branches: [ master ]
+    workflow_dispatch:
 jobs:
-       build:
-           runs_on: self-hosted
+    build:
+       runs_on: self-hosted
            steps:
                -uses: actions/checkout@v2
 	  
